@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.active{
+    color:#4FA74F;
+    
+}
+
+.row{
+    @apply flex flex-wrap py-8  ; 
+}
+
+.btn{
+    @apply px-4 py-2 bg-[#4FA74F] text-white  rounded-lg font-semibold hover:bg-[#2b5c2b];
+}
+
+.product .btn{
+   transition:transform 0.3s , opacity 0.3s ;
+   transform : translateY(100%);
+   opacity: 0;
+}
+
+.product:hover .btn {
+    transform : translateY(0%);
+    opacity: 1;
+}
+
+
+
+.product .wishlist{
+    transition:transform 0.3s , opacity 0.3s ;
+    transform : translateX(100%);
+    opacity: 0;
+ }
+ 
+ .product:hover .wishlist {
+     transform : translateX(0%);
+     opacity: 1;
+ }
