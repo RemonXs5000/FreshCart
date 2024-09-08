@@ -12,7 +12,7 @@ export default function Brands() {
       }
     
     
-      const {data:Brands ,isLoading} = useQuery({
+      const {data:brands ,isLoading} = useQuery({
         queryKey : ["getBrands"],
         queryFn : getBrands,
         select :(data) => data.data.data
@@ -33,7 +33,7 @@ export default function Brands() {
         <>
       
       <div className='row w-[90%] mx-auto mb-6'> 
-        {Brands.map((brand)=>
+        {brands?.map((brand)=>
           <div className='w-1/5 py-2 px-5 my-2 '>
         <Link to={`/home`}>
             <div className='product rounded-md'>  

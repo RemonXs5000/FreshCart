@@ -16,7 +16,7 @@ import Checkout from './Component/Checkout/Checkout';
 import RouteGuard from './Component/RouteGuard/RouteGuard';
 import ProductDetails from './Component/ProductDetails/ProductDetails';
 import CodeVerification from './Component/CodeVerification/CodeVerification';
-import Brands from './Component/Categories/Brands/Brands';
+import Brands from './Component/Brands/Brands';
 
 // Context providers
 import UserContextProvider from './Context/UserContext';
